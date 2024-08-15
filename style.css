@@ -1,0 +1,111 @@
+.side-nav{
+     background: #00bcd5;
+     color: #fff;
+     font-weight: 500;
+     border-radius: 10px;
+     margin:auto;
+}
+
+input{
+    outline: none;
+}
+
+#sideMenu{
+    font-weight: 700;
+    font-size: 18px;
+    border: 0.5px #fff solid;
+}
+.side-nav:active{
+    color: #00bcd5;
+    
+}
+
+.icon{
+    color:#00bcd5;
+    font-size: 18px;
+}
+
+.icons{
+    color:#fff;
+}
+
+.circl-img{
+    color:#00bcd5;
+    font-size: 50px;
+}
+
+.website, .mobile, .video, .graphic{
+    font-size: 10%;
+    border-radius: 10px;
+}
+
+
+textarea{
+    resize: none;
+}
+
+.logo-name{
+    font-size: 18px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.logo-name-dark{
+    color: rgb(19, 18, 18);
+    font-size: 18px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+.logo-name-black{
+    color: rgb(85, 85, 85);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+
+
+/* Add some basic styling to the video grid */
+.video-container {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Style the full-screen video container */
+  #full-screen-video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 1000;
+    display: none; /* Hide by default */
+  }
+  
+  #full-screen-video-container.show {
+    display: block;
+  }
+  
+  #full-screen-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  #close-full-screen-video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+  }
