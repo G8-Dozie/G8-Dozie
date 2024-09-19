@@ -35,35 +35,3 @@ function toggleTheme() {
         localStorage.theme = 'light'
     }
 }
-
-
-
-// Get all video containers
-const videoContainers = document.querySelectorAll('.video-container');
-
-// Add event listener to each video container
-videoContainers.forEach((container) => {
-  container.addEventListener('click', () => {
-    // Get the video element inside the container
-    const video = container.querySelector('video');
-
-    // Get the full-screen video container
-    const fullScreenVideoContainer = document.getElementById('full-screen-video-container');
-
-    // Get the full-screen video element
-    const fullScreenVideo = document.getElementById('full-screen-video');
-
-    // Set the source of the full-screen video to the clicked video
-    fullScreenVideo.src = video.src;
-
-    // Show the full-screen video container
-    fullScreenVideoContainer.classList.remove('hidden');
-
-    // Add event listener to close button
-    const closeButton = document.getElementById('close-full-screen-video');
-    closeButton.addEventListener('click', () => {
-      // Hide the full-screen video container
-      fullScreenVideoContainer.classList.add('hidden');
-    });
-  });
-});
